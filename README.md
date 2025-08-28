@@ -1,63 +1,113 @@
-# 🚀 Assignment: Mastering JavaScript Fundamentals
+🌊 Water & Sanitation Webpage (JavaScript Basics Project)
 
-Welcome to your next step toward JavaScript mastery! In this assignment, you'll explore essential concepts that form the backbone of interactive, dynamic web pages—functions, loops, and the Document Object Model (DOM). Ready to code like a pro? Let’s dive in.
+This project is an educational responsive webpage about Water, Hygiene, and Sanitation (WASH).
+It demonstrates the use of HTML, CSS, and JavaScript fundamentals:
 
----
+✅ JavaScript basics (variables, conditionals)
 
-## 🎯 Part 1: Mastering JavaScript Basics
+✅ Functions for reusability
 
-Start with the building blocks of JavaScript—variables, data types, operators, and conditionals. You’ll write a few simple programs that capture user input, make decisions using `if/else`, and output results using `console.log()` or by modifying the webpage content.
+✅ Loops for iteration
 
-**Goal:** Demonstrate your understanding of how JavaScript flows, processes logic, and interacts with data.
+✅ DOM manipulation for interactivity
 
----
+✅ Responsive layout using CSS Grid + Flexbox
 
-## ❤️ Part 2: JavaScript Functions — The Heart of Reusability
+📂 Project Structure
+project-folder/
+│── index.html   # Main webpage structure
+│── style.css    # Styles and responsive design
+│── script.js    # JavaScript interactivity and logic
+│── README.md    # Project documentation
 
-Functions are your best friends in programming. Write a few custom functions that take inputs, process them, and return or display results. You’ll also create functions for common tasks (like calculating totals, formatting strings, or toggling content).
+🎯 Assignment Breakdown
+Part 1: JavaScript Basics
 
-**Goal:** Build reusable blocks of logic that make your code cleaner, smarter, and DRY (Don't Repeat Yourself).
+Declares variables (recommendedWaterIntake, userInputLiters).
 
----
+Uses if/else conditionals to check if the user’s daily water intake meets the recommended amount.
 
-## 🔁 Part 3: JavaScript Loops — Embrace the Power of Repetition!
+Outputs results directly on the webpage when a button is clicked.
 
-Use `for`, `while`, or `forEach` loops to solve repetitive tasks like iterating through arrays, generating dynamic content, or simulating simple countdowns or animations.
+👉 Example:
 
-**Goal:** Practice controlling flow with repetition and iteration—key to working with lists, animations, and form elements.
+if (liters >= recommendedWaterIntake) {
+  return "✅ Great! You're drinking enough water.";
+}
 
----
+Part 2: Functions — Reusability
 
-## 🌐 Part 4: Mastering the DOM with JavaScript
+checkWaterIntake(liters) → Evaluates health message based on input.
 
-It’s time to bring your page to life! Use JavaScript to select elements, respond to user actions, and dynamically update the content of your web page. Tasks may include changing text, toggling classes, listening to click events, or creating elements on the fly.
+calculateAverage(intakes) → Calculates the average from an array of water intakes.
 
-**Goal:** Show your skill in making a static HTML page interactive using pure JavaScript and DOM manipulation.
+toggleHighlight() → Adds/removes a highlight style on the data table when clicked.
 
----
+Functions help keep code clean, modular, and DRY (Don’t Repeat Yourself).
 
-## Deliverables
+Part 3: Loops — Repetition
 
-* A single project folder containing:
+For Loop: Iterates through an array of water facts and prints them in the console.
 
-  * `index.html` — your structured HTML content
-  * `style.css` — (optional) if you'd like to style your content
-  * `script.js` — your JavaScript file including:
+While Loop: Demonstrates a simple countdown.
 
-    * Variable declarations and conditionals (Part 1)
-    * At least 2 custom functions (Part 2)
-    * At least 2 loop examples (Part 3)
-    * At least 3 DOM interactions (Part 4)
+👉 Example fact loop:
 
-Each part of the assignment should be clearly commented and organized.
+for (let i = 0; i < exampleFacts.length; i++) {
+  console.log("Fact:", exampleFacts[i]);
+}
 
----
+Part 4: DOM Manipulation
 
-## Outcome
+Brings the webpage to life using JavaScript + the DOM:
 
-* Clear understanding of variables, conditionals, functions, loops, and DOM methods
-* Code readability and comments explaining your logic
-* Effective use of functions and loops to reduce repetition
-* DOM manipulation that improves interactivity
-* Clean structure and consistent indentation
+Input & Button → Captures user’s daily water intake and displays a health message.
 
+Dynamic Content → Adds a new fact to the list when a button is clicked.
+
+Table Interaction → Toggles a highlight effect on the table when clicked.
+
+👉 Example:
+
+document.getElementById("checkWaterBtn").addEventListener("click", function() {
+  let liters = document.getElementById("waterInput").value;
+  document.getElementById("waterMessage").textContent = checkWaterIntake(liters);
+});
+
+🎨 Responsive Design
+
+CSS Grid is used for the overall page layout (header, sidebar, content, footer).
+
+Flexbox is used for navigation alignment and card layouts.
+
+Media queries adapt the layout for desktop, tablet, and mobile.
+
+🚀 How to Run
+
+Clone or download this project folder.
+
+Open index.html in your browser.
+
+Try:
+
+Entering water intake and clicking Check Health.
+
+Clicking Add New Fact.
+
+Clicking the table to toggle highlight.
+
+Resizing the browser to see responsive changes.
+
+📖 Learning Outcomes
+
+By completing this project, you’ll understand:
+
+How to structure a webpage with HTML5.
+
+How to use Grid + Flexbox for responsive layouts.
+
+How to apply JavaScript basics (variables, conditionals, loops, functions).
+
+How to make web pages interactive with the DOM.
+
+✨ This project combines environmental science (WASH education) with web development skills to create a practical, interactive learning tool.

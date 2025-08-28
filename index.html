@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water & Sanitation Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Water, Hygiene & Sanitation (WASH)</h1>
+      <p>Promoting health through safe water and sanitation practices</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Water</a></li>
+        <li><a href="#">Sanitation</a></li>
+        <li><a href="#">Hygiene</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Why Water & Sanitation Matter</h2>
+      <p>
+        Access to clean water and proper sanitation is fundamental for good health. 
+        Lack of these essentials contributes to the spread of diseases such as cholera, 
+        diarrhea, and typhoid. Sustainable solutions can save millions of lives annually.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Clean Water</h3>
+          <p>Ensures hydration, supports agriculture, and prevents waterborne illnesses.</p>
+        </div>
+        <div class="card">
+          <h3>Sanitation</h3>
+          <p>Proper waste disposal reduces environmental contamination and disease spread.</p>
+        </div>
+        <div class="card">
+          <h3>Hygiene</h3>
+          <p>Handwashing and good hygiene practices are the simplest and most effective 
+             health interventions.</p>
+        </div>
+      </div>
+
+      <!-- Responsive Table Section -->
+      <div class="table-container">
+        <h2>WASH Factors & Health Risks</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Factor</th>
+              <th>Impact</th>
+              <th>Related Health Risks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unsafe Drinking Water</td>
+              <td>Exposure to pathogens</td>
+              <td>Cholera, Diarrhea, Typhoid</td>
+            </tr>
+            <tr>
+              <td>Poor Sanitation</td>
+              <td>Contaminated environment</td>
+              <td>Parasitic Infections, Dysentery</td>
+            </tr>
+            <tr>
+              <td>Lack of Hygiene</td>
+              <td>Hand-to-mouth transmission</td>
+              <td>Respiratory Illnesses, Gastroenteritis</td>
+            </tr>
+            <tr>
+              <td>Open Defecation</td>
+              <td>Spread of fecal matter</td>
+              <td>Diarrheal Disease, Soil-Transmitted Helminths</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Interactive Section -->
+      <section id="interactive">
+        <h2>Interactive Section</h2>
+        <p>Enter the liters of clean water you drink daily:</p>
+        <input type="number" id="waterInput" placeholder="Liters">
+        <button id="checkWaterBtn">Check Health Message</button>
+        <p id="waterMessage"></p>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Did You Know?</h2>
+      <ul id="facts-list">
+        <li>2.2 billion people lack access to safe drinking water.</li>
+        <li>4.2 billion people lack safely managed sanitation.</li>
+        <li>Handwashing can reduce diarrheal disease by up to 40%.</li>
+      </ul>
+      <button id="addFactBtn">Add New Fact</button>
+    </aside>
+
+    <footer>
+      <p>&copy; Jescah Ondeche 2025 Water & Sanitation Awareness | Built with HTML, CSS & JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
